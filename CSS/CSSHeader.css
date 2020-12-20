@@ -1,0 +1,191 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,500&family=Source+Sans+Pro:ital,wght@0,300;1,300&display=swap');
+
+.first-page {
+    height: 100vh;
+    background-image: url(../backgroundimg/BG-beautiful_rustic_plating_dessert.jpg);
+    background-size: cover;
+    animation: slide 20s infinite;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+@keyframes slide {
+    0% {
+        background-image: url(../backgroundimg/BG-blueberry-cake.jpg);
+    }
+
+    20% {
+        background-image: url(../backgroundimg/BG-christmas-cookies-1.jpg);
+    }
+
+    40% {
+        background-image: url(../backgroundimg/BG-macaron.png);
+    }
+
+    60% {
+        background-image: url(../backgroundimg/BG-crepe-1.png)
+    }
+
+    80% {
+        background-image: url(../backgroundimg/BG-cookies.png);
+    }
+}
+
+
+header {
+    max-height: 100px;
+    height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+    color: white;
+    display: flex;
+}
+
+    /*Class logo*/
+    header .logo {
+        max-width: 200px;
+        margin: 0;
+        cursor: pointer;
+        flex: 1;
+    }
+
+        header .logo img {
+            padding: 5px 30px;
+            width: 120px;
+        }
+    /*Class Navbar*/
+    header .navbar {
+        align-items: center;
+        min-width: 800px;
+        flex: 1;
+        padding-top: 10px;
+        font-size: 18px;
+    }
+
+        header .navbar ul {
+            text-align: center;
+            padding-left: 0px;
+        }
+
+            header .navbar ul li {
+                display: inline-block;
+                list-style: none;
+                padding: 0px;
+            }
+
+                header .navbar ul li a {
+                    text-decoration: none;
+                    color: white;
+                    padding: 0px 20px;
+                }
+
+                    header .navbar ul li a:hover {
+                        background: #9fb7cd;
+                        color: #0b3961;
+                        text-decoration: underline;
+                    }
+
+                header .navbar ul li ul {
+                    position: absolute;
+                    display: none;
+                    margin-top: 10px;
+                    padding-left: 0px;
+                    width: 10em;
+                }
+
+                header .navbar ul li:hover ul {
+                    display: block;
+                }
+
+                header .navbar ul li ul li {
+                    width: 100%;
+                    padding: 10px;
+                    background-color: #0f4c81;
+                    color: white;
+                    text-align: left;
+                }
+
+                    header .navbar ul li ul li:hover {
+                        background: #9fb7cd;
+                        color: #0b3961;
+                    }
+
+                        header .navbar ul li ul li:hover a {
+                            text-decoration: none;
+                        }
+    /*Class Icon*/
+    header .icon {
+        min-width: 200px;
+        flex: 1;
+        display: flex;
+    }
+
+        header .icon svg {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /*Icon User*/
+        header .icon .user {
+            width: 60%;
+        }
+
+            header .icon .user ul {
+                padding-left: 10px;
+            }
+
+            header .icon .user li {
+                display: none;
+                position: relative;
+                margin: 10px 0;
+                flex: 1;
+            }
+
+                header .icon .user li a {
+                    text-decoration: none;
+                    color: white;
+                    background: #0f4c81;
+                    border: 1px solid #0f4c81;
+                    padding: 5px;
+                }
+
+            header .icon .user:hover ul li {
+                display: inline-block;
+            }
+
+            header .icon .user li:hover a {
+                background: #9fb7cd;
+                color: #0b3961;
+            }
+/*Icon Search*/
+.icon .search {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+}
+
+    .icon .search svg {
+        float: right;
+        padding-left: 80px;
+    }
+
+    .icon .search .searchbar {
+        display: grid;
+        grid-template-columns: 5fr 1fr;
+        width: 130px;
+        border: 1px solid #0f4c81;
+        background: white;
+        display: none;
+    }
+
+        .icon .search .searchbar input {
+            border: 0px;
+            width: 100px;
+            height: 16px;
+            margin-top: 0px;
+        }
+
+    .icon .search:hover .searchbar {
+        display: block;
+    }

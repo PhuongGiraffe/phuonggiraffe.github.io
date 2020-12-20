@@ -1,0 +1,145 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,500&family=Source+Sans+Pro:ital,wght@0,300;1,300&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Lora;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+/*best seller*/
+
+.column {
+    text-align: left;
+    position: relative;
+    padding: 0 1rem;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px
+}
+
+
+.thumb {
+    width: 280px;
+    height: 280px;
+    background-color: #3e3e3e;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.iconheart {
+    font-size: 25px;
+    color: black;
+}
+
+.iconcart {
+    font-size: 25px;
+    color: black;
+}
+
+
+.centerimg {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+    border-top: 2px solid #0f4c81;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    padding: 10px;
+}
+
+.centerpromo {
+    margin: auto;
+    width: 60%;
+    border: 2px solid #0f4c81;
+    padding: 10px;
+}
+
+.titlecake {
+    margin-top: 10px;
+    width: 280px
+}
+
+img {
+    display: inline-block;
+    vertical-align: middle;
+    max-height: 100%;
+    max-width: 100%;
+}
+/*blog*/
+
+.imgfb {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.blog {
+    position: relative;
+}
+
+.blogcontent {
+    transition: .5s ease;
+    opacity: 0;
+    top: 50%;
+    left: 20%;
+    transform: translate(-10%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    position: absolute;
+    visibility: hidden;
+    text-align: center;
+}
+
+.button {
+    width: 200px;
+    padding: 10px 12px;
+    border: 1px solid white;
+}
+
+.blog:hover .imgfb {
+    filter: brightness(50%);
+}
+
+.blog:hover .blogcontent {
+    opacity: 1;
+    visibility: visible;
+}
+
+.blog:hover .blogbutton {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/*feedback*/
+.box {
+    width: 250px;
+    border: 2px solid #0f4c81;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.tablefeedback td {
+    width: 33%;
+}

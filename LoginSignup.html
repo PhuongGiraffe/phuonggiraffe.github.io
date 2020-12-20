@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Login - Signup | Lagom Bakery</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+		/>
+		<link href="CSS/CSSLogin.css" type="text/css" rel="stylesheet" />
+		<link rel="shortcut icon" href="image-logo/logo-1.png" />
+
+		<script type="text/javascript">
+			function loadFormLogin() {
+				document.getElementById('formcontent').innerHTML =
+					'<object class="object" type="text/html" data="LoginForm.html"></object>';
+				document.getElementById('loginload').style.color = '#5b8cb6';
+				document.getElementById('signupload').style.color = 'black';
+			}
+			function loadFormSignup() {
+				document.getElementById('formcontent').innerHTML =
+					'<object class="object" type="text/html" data="SignupForm.html"></object>';
+				document.getElementById('loginload').style.color = 'black';
+				document.getElementById('signupload').style.color = '#5b8cb6';
+			}
+		</script>
+	</head>
+	<body onload="loadFormLogin()">
+		<div>
+			<!--Start Header-->
+			<div style="background-color: #0f4c81; height: 10vh">
+				<header>
+					<!--Start class Logo-->
+					<div class="logo" style="text-align: center">
+						<a href="index.html">
+							<img
+								src="image-logo/logo-2.png"
+								style="width: 120px; margin-top: 5px"
+							/>
+						</a>
+					</div>
+				</header>
+			</div>
+			<!--End Header-->
+
+			<div class="login">
+				<div
+					class="leftbackground"
+					style="background-image: url(imageforlogin/bglogin.jpg)"
+				></div>
+				<div class="rightlogin">
+					<h1 align="center">
+						<a
+							onclick="loadFormLogin()"
+							id="loginload"
+							color="#5b8cb6"
+							style="cursor: pointer"
+							>Log in &nbsp; &nbsp; &nbsp; &nbsp;</a
+						>
+						<a
+							id="signupload"
+							style="cursor: pointer"
+							onclick="loadFormSignup()"
+							>Sign up</a
+						>
+					</h1>
+					<div id="formcontent" name="formcontent"></div>
+				</div>
+			</div>
+			<footer>
+				<div class="main_content" style="width: 1300px">
+					<div class="left">
+						<a href="index.html"
+							><img
+								src="image-logo/logo-2.png"
+								style="width: 150px; cursor: pointer"
+						/></a>
+					</div>
+					<div class="nextleft">
+						<h2 style="font-weight: bold">ABOUT</h2>
+						<div class="content">
+							<a href="OurStory.html">Our story</a><br />
+							<a href="Blog.html">Our blogs</a><br />
+							<a href="Menu.html">Our menu</a><br />
+							<a href="Contact.html">Our contact</a>
+						</div>
+						<div>
+							<img
+								style="width: 200px; height: auto; margin-top: 10px"
+								src="imageforhome/bocongthuong.png"
+							/>
+						</div>
+					</div>
+					<div class="nextright">
+						<h2 style="font-weight: bold">ALWAYS-ON SUPPORT</h2>
+						<div class="content">
+							<a href="#">Delivery now</a><br />
+							<a href="#">Others payment</a>
+						</div>
+						<div class="address">
+							<h2 style="font-weight: bold">ADDRESS</h2>
+							<div class="content">
+								02, Hai Trieu Street, District 01,<br />
+								Ho Chi Minh City, Vietnam
+							</div>
+						</div>
+						<div>
+							<a href="Privacy.html" style="float: left"
+								><h2 class="privacy" style="font-weight: bold">
+									PRIVACY
+								</h2></a
+							>
+							<a href="Termofuse.html" style="float: right"
+								><h2 class="term" style="font-weight: bold">
+									TERM OF USE
+								</h2></a
+							>
+						</div>
+					</div>
+					<div class="right">
+						<h2 style="font-weight: bold">DELIVERY</h2>
+						<div class="content">
+							<a href="#">Shipping methods</a><br />
+							<a href="#">Payment</a>
+							<a href="#">Cash voucher</a>
+						</div>
+						<div class="social" color="white">
+							<a href="#"><span class="fab fa-facebook-f"></span></a>
+							<a href="#"><span class="fab fa-twitter"></span></a>
+							<a href="#"><span class="fab fa-instagram"></span></a>
+							<a href="#"><span class="fab fa-linkedin"></span></a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
